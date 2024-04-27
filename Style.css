@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Overall Layout */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for Form */
+.container {
+    background: #ffffff;
+    padding: 25px 40px 40px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+
+/* Form Headings */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Input Fields Styling */
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.1);
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004495;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
